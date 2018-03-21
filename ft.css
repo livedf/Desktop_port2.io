@@ -1,0 +1,14 @@
+/* footer 부분 css */
+
+ .ft {position: fixed;width: 100%; height: 65px;background-color: rgba(45, 43, 41, 1); bottom: 0%; z-index: 102;}
+        .ftwrap {width: 1280px; height: 100%; margin: 0 auto;}
+        .ftlink {width: 35%; height: 100%;float: left;}
+        .ftlink ul li {float: left;width: 33.33%; height: 100%; }
+        .ftlink ul li:first-child {width: 20%;}
+        .ftlink ul li a {line-height: 65px; text-align: center; color: beige;}
+        .ftsns {width: 30%; height: 100%; float: left;}
+        .ftsns ul li {width: 25%; height: 100%;float: left;margin-top: 15px;}
+        .ftsns ul li a {display: block; width: 100%; height: 100%;}
+        .ftsns ul li a img {display: block;width: 28px;height:28px; margin: 0 auto; opacity: 0.5}
+        .cpr {width: 35%; height: 100%; float: left; }
+        .cprt {font-size:0.65em; line-height: 1.5;text-align: right;color: beige ; font-weight: 100;padding-top: 8px;}

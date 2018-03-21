@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Piton</title>
+    <script href="jquery.js"></script>
+	<script href="html5shiv.js"></script>
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="font.css">
+    <style>
+        .con {width: 100%; height: 100%; background-image: url("./img/main.jpg"); background-position: center center; background-size: 100% 100%; background-repeat: no-repeat;}
+        
+        .back_video {position: absolute;display: block; width: 115%; height: 115%; top: 0; left: -7%; z-index: 50;}
+        .gnb ul li {position: absolute;}
+        .pic_bg {width: 300px; height: 700px;z-index: 100; background-color: rgba(243, 244, 244, 0.6);top:90px;   left: 0;  right: 0;  margin-left: auto; margin-right: auto;   }
+        .logo {width: 300px; height: 150px; left: 0; right: 0; margin-left: auto; margin-right: auto; z-index: 101; top:90px;}
+        .logo img {display: block;width: 30%; height: 30%; margin: 0 auto;margin-top: 45px;}
+        
+        
+        .gnb_link {width: 300px; height: 78px;  z-index: 101;   left: 0;  right: 0;  margin-left: auto; margin-right: auto; text-align: center; font-size:25px; }
+        .gnb_link a { color : #272727;}
+        .gnb1 {top: 240px;}
+        .gnb2 {top: 318px;}
+        .gnb3 {top: 396px;}
+        .gnb4 {top: 474px;}
+        .gnb5 {top: 552px;}
+        .gnb6 {top: 630px;}
+        .gnb7 {top: 708px;}
+        
+        .pic_bac {width: 100%; height: 100%;top:0 ;opacity: 0;z-index: 70; transition: 1s;}
+        .pic_bac img {display: block; width: 100%; height: 100%;}
+        
+        .pic_bg:hover > img {display: none;}
+        .pic_bg:hover {background-color: rgba(68, 68, 68, 0.8);}
+        
+        
+        .gnb1:hover {text-shadow: #ffffff 0px 0px 7px; }
+        .gnb2:hover {text-shadow: #ffffff 0px 0px 7px; }
+        .gnb3:hover {text-shadow: #ffffff 0px 0px 7px; }
+        .gnb4:hover {text-shadow: #ffffff 0px 0px 7px; }
+        .gnb5:hover {text-shadow: #ffffff 0px 0px 7px; }
+        .gnb6:hover {text-shadow: #ffffff 0px 0px 7px; }
+        .gnb7:hover {text-shadow: #ffffff 0px 0px 7px; }
+        
+        
+        
+        .gnb1:hover ~ .bac1 {top:0; opacity: 1;}
+        .gnb2:hover ~ .bac2 {top:0; opacity: 1;}
+        .gnb3:hover ~ .bac3 {width: 100%; height: 100%; top:0; opacity: 1;}
+        .gnb4:hover ~ .bac4 {width: 100%; height: 100%; top:0; opacity: 1;}
+        .gnb5:hover ~ .bac5 {width: 100%; height: 100%; top:0; opacity: 1;}
+        .gnb6:hover ~ .bac6 {width: 100%; height: 100%; top:0; opacity: 1;}
+        .gnb7:hover ~ .bac7 {width: 100%; height: 100%; top:0; opacity: 1;}
+    
+    </style>
+    <link rel="stylesheet" href="ft.css">
+</head>
+
+
+<body>
+    <div class="con">
+
+        <nav class="gnb">
+            <ul>
+                <li class="logo"><a href="index.html"><img src="./img/logo.svg" alt=""></a></li>
+                <li class="gnb_link gnb1"><a href="sub1.html">Philipsophy</a></li>
+                <li class="gnb_link gnb2"><a href="sub2.html">Men's wear</a></li>
+                <li class="gnb_link gnb3"><a href="sub3.html">Women's wear</a></li>
+                <li class="gnb_link gnb4"><a href="sub4.html">Men's acc</a></li>
+                <li class="gnb_link gnb5"><a href="sub5.html">Women's acc</a></li>
+                <li class="gnb_link gnb6"><a href="sub6.html">Men's footwear</a></li>
+                <li class="gnb_link gnb7"><a href="sub7.html">Women's footwear</a></li>
+                <li class="pic_bg"></li>
+                <li class="pic_bac bac1"><img src="./img/main1.png" alt=""></li>
+                <li class="pic_bac bac2"><img src="./img/main2.jpg" alt=""></li>
+                <li class="pic_bac bac3"><img src="./img/main3.jpg" alt=""></li>
+                <li class="pic_bac bac4"><img src="./img/main4.jpg" alt=""></li>
+                <li class="pic_bac bac5"><img src="./img/main5.jpg" alt=""></li>
+                <li class="pic_bac bac6"><img src="./img/main6.jpg" alt=""></li>
+                <li class="pic_bac bac7"><img src="./img/main7.jpg" alt=""></li>
+            </ul>
+        </nav>
+        <footer class="ft">
+            <div class="ftwrap">
+                <div class="ftlink">
+                    <ul>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보 처리방침</a></li>
+                        <li><a href="">개인정보 수집방침</a></li>
+                    </ul>
+                </div>
+                <div class="ftsns">
+                    <ul>
+                        <li><a href=""><img src="./img/sns_icon/facebook.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/sns_icon/instagram.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/sns_icon/pinterest.svg" alt=""></a></li>
+                        <li><a href=""><img src="./img/sns_icon/twitter.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="cpr">
+                    <p class="cprt">copyright @ 2017 piton. All right reversed<br/>본 디자인은 학생의 개인적인 용도로 작성되었으며, 상업적인 용도로 사용시 kiton.it, kiton.co.jp 사이트의 동의를 요합니다.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

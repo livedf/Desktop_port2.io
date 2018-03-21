@@ -1,0 +1,88 @@
+/* stylesheet */
+body {
+     background-image: url("./img/bag.png");
+    background-position: center center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+label {cursor: pointer}
+.con {
+    width: 100%; height: 100%; 
+
+}
+        #hd {width: 100%; height: 150px; position: absolute; top: 0; left: 0;background-color: rgba(45, 43, 41, 1); box-shadow: 5px 5px 5px black;}
+.hdwrap {width: 1280px; height: 100px; margin: 0 auto; padding-top: 50px; }
+        .gnb {width: 40%; height: 100%; float: left;}
+.gnb_lst {width: 25%; height: 50%; float: left; }
+.gnb ul li:last-child {width: 50%;}
+.gnb_lst a {font-size:0.9em ;line-height: 2.5; color: beige;}
+.logo {width: 20%; height: 100%;float: left;}
+.logo img {display: block;width: 100px; height: 40px;margin: 0 auto;}
+.tnb {width: 40%; height: 100%; float: right;}
+.tnb_lst {width: 10%; height: 100%; float: right;padding-top: 15px;}
+.tnb_lst img {width: 28px; height: 28px;float: right;opacity: 0.5;}
+
+#hd::after {content: ''; display: block; width: 100%; height: 3px; background-color: black;position: absolute; z-index: 100;}
+
+/* body css*/
+.c_wrap {width: 1280px; height: 755px; margin: 0 auto;  padding-top: 150px;}
+/* aisde css */
+.aside     {width: 200px; height: 1700px; position: absolute; padding-top: 262px; background-color: rgba(245, 245, 240, 0.5); margin-top: 20px; overflow: hidden }
+.aside h3 {text-align: center;line-height: 1.5;}
+.snb ul {width: 100%; height: 5000px;}
+.snb ul li {width: 100%; height: 50px;}
+.snb_title {display: block;text-align: center; line-height: 50px;}
+.snb_lst label {z-index: 5;}
+/* .snb ul li:nth-child(1) a {text-shadow: #000 0px 0px 7px;} */
+
+/* content css */
+.content {width: 1080px; height: auto; float: right;margin-top: 20px;}
+.ban {width: 100%; height: 250px; }
+.ban img {display: block; width: 100%;height: 100%;}
+.bread {float: right; line-height: 1.5;}
+
+/* product css */
+.item {width: 1080px; height: 300px;clear: both; margin-top: 30px;}
+.item ul li {width: 22%;height: 300px; margin-right: 2.4%;float: left; box-shadow: 1px 1px 5px rgba(34, 35,31, 0.5); position: relative;}
+.item ul li:first-child {margin-left: 2.4%;}
+.pro_img {display: block; width: 220px; height: 220px; margin: 0 auto;}
+.pro_title {text-align: center; line-height: 1.5; font-size:18px; padding-top: 15px; font-weight: 200;}
+.pro_price{text-align: center; line-height:1.5; font-size:12px;font-family: italic;}
+.pro_icon {position: absolute; width: 90px; height: 90px; top: -2px; right: 5px;}
+
+/* aside action css */
+#rdo0:checked ~ .content > #new_arr {display: block;}
+#rdo0:checked ~ .content > #pop_item {display: block;}
+#rdo0:checked ~ .content >  #sale_item {display: block;}
+#rdo0:checked ~ .content >  #limited_edition {display: block;}
+#rdo0:checked ~ .aside > nav > ul > li:first-child {text-shadow: 1px 1px 5px rgba(12, 11, 14, 0.8);}
+
+#rdo1:checked ~ .content > #new_arr {display: block;}
+#rdo1:checked ~ .content > #pop_item {display: none;}
+#rdo1:checked ~ .content > #sale_item {display: none;}
+#rdo1:checked ~ .content > #limited_edition {display: none;}
+#rdo1:checked ~ .aside > nav > ul > li:nth-child(2) {text-shadow: 1px 1px 5px rgba(12, 11, 14, 0.8);}
+
+#rdo2:checked ~ .content > #new_arr {display: none}
+#rdo2:checked ~ .content > #pop_item {display: block;}
+#rdo2:checked ~ .content > #sale_item {display: none;}
+#rdo2:checked ~ .content > #limited_edition {display: none;}
+#rdo2:checked ~ .aside > nav > ul > li:nth-child(3) {text-shadow: 1px 1px 5px rgba(12, 11, 14, 0.8);}
+
+#rdo3:checked ~ .content > #new_arr {display: none;}
+#rdo3:checked ~ .content > #pop_item {display: none;}
+#rdo3:checked ~ .content > #sale_item {display: block;}
+#rdo3:checked ~ .content > #limited_edition {display: none;}
+#rdo3:checked ~ .aside > nav > ul > li:nth-child(4) {text-shadow: 1px 1px 5px rgba(12, 11, 14, 0.8);}
+
+#rdo4:checked ~ .content > #new_arr {display: none;}
+#rdo4:checked ~ .content > #pop_item {display: none;}
+#rdo4:checked ~ .content > #sale_item {display: none;}
+#rdo4:checked ~ .content > #limited_edition {display: block;}
+#rdo4:checked ~ .aside > nav > ul > li:nth-child(5) {text-shadow: 1px 1px 5px rgba(12, 11, 14, 0.8);}
+
+/* hover active action css */
+.item ul li:hover {box-shadow:1px 1px 7px rgba(34, 35, 31, 0.7)}
+.item ul li:active {box-shadow: 0px 0px 0px ;}
+.item ul li:hover img {opacity: 0.2;}
+.item ul li:hover a::after {content: '가격보기'; position: absolute;top: 130px; display: block; width: 100%; height: 50px; text-align: center; font-size:1.2em; color : black;z-index: 5; transition:2s;}

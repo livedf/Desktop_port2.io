@@ -1,0 +1,40 @@
+/* stylesheet */
+body {
+     background-image: url("./img/bag.png");
+    background-position: center center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+.con {
+    width: 100%; height: 100%; 
+
+}
+        #hd {width: 100%; height: 150px; position: absolute; top: 0; left: 0;background-color: rgba(45, 43, 41, 1);}
+.hdwrap {width: 1280px; height: 100px; margin: 0 auto; padding-top: 50px; }
+        .gnb {width: 40%; height: 100%; float: left;}
+.gnb_lst {width: 25%; height: 50%; float: left; }
+.gnb ul li:last-child {width: 50%;}
+.gnb_lst a {font-size:0.9em ;line-height: 2.5; color: beige;}
+.logo {width: 20%; height: 100%;float: left;}
+.logo img {display: block;width: 100px; height: 40px;margin: 0 auto;}
+.tnb {width: 40%; height: 100%; float: right;}
+.tnb_lst {width: 10%; height: 100%; float: right;padding-top: 15px;}
+.tnb_lst img {width: 28px; height: 28px;float: right;opacity: 0.5;}
+
+#hd::after {content: ''; display: block; width: 100%; height: 3px; background-color: black;position: absolute; z-index: 100;}
+
+/* body css*/
+.c_wrap {width: 1280px; height: 755px; margin: 0 auto;  padding-top: 150px;}
+/* aisde css */
+.aside     {width: 200px; height: 1700px; position: absolute; padding-top: 262px; background-color: rgba(245, 245, 240, 0.5); margin-top: 20px; overflow: hidden }
+.aside h3 {text-align: center;line-height: 1.5;}
+.snb ul {width: 100%; height: 5000px;}
+.snb ul li {width: 100%; height: 50px;}
+.snb ul li a {display: block;text-align: center; line-height: 50px;}
+.snb ul li:nth-child(1) a {text-shadow: #000 0px 0px 7px;}
+
+/* content css */
+.content {width: 1080px; height: auto; float: right;margin-top: 20px;}
+.ban {width: 100%; height: 250px;}
+.ban img {display: block; width: 100%;height: 100%;}
+.bread {float: right; line-height: 1.5;}
